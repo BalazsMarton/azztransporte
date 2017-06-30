@@ -1,0 +1,21 @@
+@mixin declare-font-face($font-family, $font-filename, $font-weight : normal, $font-style :normal, $font-stretch : normal) {
+@font-face {
+font-family: '#{$font-family}';
+src: url(font-path('#{$font-filename}.eot'));
+src: url(font-path('#{$font-filename}.eot?#iefix')) format('embedded-opentype'),
+url(font-path('#{$font-filename}.woff')) format('woff'),
+url(font-path('#{$font-filename}.ttf')) format('truetype'),
+url(font-path('#{$font-filename}.svg##{$font-family}')) format('svg');
+font-weight: $font-weight;
+font-style: $font-style;
+font-stretch: $font-stretch;
+}
+}
+
+/* mintakód
+@include declare-font-face('lato-regular', 'lato-regular', 400);
+@include declare-font-face('lato-bold', 'lato-bold', 700);
+@include declare-font-face('lato-black', 'lato-black', 900);
+@include declare-font-face('sourcesanspro-regular', 'sourcesanspro-regular', 400);
+@include declare-font-face('sourcesanspro-bold', 'sourcesanspro-bold', 700);
+*/
