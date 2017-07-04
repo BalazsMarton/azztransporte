@@ -23,7 +23,7 @@ font-stretch: $font-stretch;
 
 $bluegray: #455A64;
 $blue: #0277BD;
-$lightgray: #CFD8DC;
+$lightgray: #cfd8dc;
 $darkbluegray: #37474F;
 $paragraphbg: #455a64;
 $lightbluegray: #ECEFF1;
@@ -66,12 +66,22 @@ $lightbluegray: #ECEFF1;
 
 .navbar {
 	background-color: $lightgray;
+	box-shadow: 0 2px 2px 0 rgba(0,0,0,0.2);
+	border: none;
 		.nav li a {
 			font-size: 16px;
 			font-family: roboto-regular;
 			margin-left: 10px;
 			margin-right: 10px;
 			color: $darkbluegray;
+		}
+
+		.nav li a:hover {
+			color: $blue;
+		}
+
+		.navbar-collapse {
+			text-align: center;
 		}
 		.navbar-brand {
 			font-size: 28px;
@@ -146,6 +156,7 @@ $lightbluegray: #ECEFF1;
 		display: inline-block;
 		background-color: $blue;
 		border-radius: 100%;
+		box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.2);
 		width: 100px;
 		height: 100px;
 		margin-bottom: 15px;
@@ -161,6 +172,7 @@ $lightbluegray: #ECEFF1;
 	.more:hover {
 		background-color: $blue;
 		color: #ffffff;
+		box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.2);
 	}
 	.btn:focus {
 		outline: none;
@@ -198,6 +210,7 @@ $lightbluegray: #ECEFF1;
 	.btn:hover {
 		background-color: $blue;
 		color: #ffffff;
+		box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.2);
 	}
 	.btn:focus {
 		outline: none;
@@ -313,6 +326,22 @@ $lightbluegray: #ECEFF1;
 	#uberuns {
 		p {
 			font-size: 14px;
+		}
+	}
+
+	.nav {
+		li {
+			a {
+				padding-bottom: 20px;
+				padding-top: 20px;
+			}
+		}
+	}
+
+	#kontakt {
+		p {
+			padding-left: 5%;
+			padding-right: 5%;
 		}
 	}
 }
