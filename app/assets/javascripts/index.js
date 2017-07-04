@@ -23,7 +23,10 @@ $(document).ready(function(){
 	$(".secondgroup").hide();
 
 	$(".more").click(function(){
-		$(".secondgroup").toggle();
+		$(".secondgroup").slideToggle("slow");
+		$(".more").text(function(i, text){
+          return text === "mehr" ? "veniger" : "mehr";
+      })
 
 	});
 
