@@ -16,3 +16,15 @@ document.addEventListener("turbolinks:load", function() {
 document.addEventListener("turbolinks:before-cache", function() {
 
 });
+
+
+$(document).ready(function(){
+
+	$(".secondgroup").hide();
+
+	$(".more").click(function(){
+		$(".secondgroup").toggle();
+
+	});
+
+});

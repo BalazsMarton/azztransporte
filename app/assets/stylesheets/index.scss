@@ -25,6 +25,7 @@ $bluegray: #455A64;
 $blue: #0277BD;
 $lightgray: #CFD8DC;
 $darkbluegray: #37474F;
+$paragraphbg: #455a64;
 $lightbluegray: #ECEFF1;
 
 /* EXTENDS */
@@ -38,7 +39,7 @@ $lightbluegray: #ECEFF1;
 
 .paragraph {
 	font-family: roboto-regular;
-	color: $darkbluegray;
+	color: $paragraphbg;
 	font-size: 16px;
 	line-height: 30px;
 }
@@ -47,6 +48,16 @@ $lightbluegray: #ECEFF1;
 	font-family: roboto-medium;
 	color: $darkbluegray;
 	margin-bottom: 25px;
+}
+
+.buttons {
+	background-color: $lightbluegray;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-family: roboto-medium;
+	color: $darkbluegray;
+	margin-top: 25px;
+	border-radius: 0px;
 }
 
 
@@ -98,6 +109,7 @@ $lightbluegray: #ECEFF1;
 
 #uberuns {
 	margin-top: 50px;
+
 	h1 {
 		@extend .title;
 	}
@@ -141,6 +153,94 @@ $lightbluegray: #ECEFF1;
 
 	.item {
 		margin-bottom: 50px;
+	}
+	.more {
+		@extend .buttons;
+	}
+
+	.more:hover {
+		background-color: $blue;
+		color: #ffffff;
+	}
+	.btn:focus {
+		outline: none;
+	}
+
+}
+
+/* KONTAKT */
+
+#kontakt {
+	margin-top: 50px;
+	background-color: $lightgray;
+	.title-row {
+		margin-bottom: 25px;
+		}
+		h1 {
+			margin-top: 50px;
+			@extend .title;
+		}
+	.form-group {
+		margin-bottom: 5px;
+	}	
+	.form-control {
+		text-transform: uppercase;
+		border: 1px solid $lightbluegray;
+		border-radius: 0%;
+	}
+
+	.form-control:focus {
+		box-shadow: 0px 0px 5px .1px $blue;
+	}
+
+	.btn {
+		@extend .buttons;
+	}
+	.btn:hover {
+		background-color: $blue;
+		color: #ffffff;
+	}
+	.btn:focus {
+		outline: none;
+	}
+	.button-row {
+		margin-top: 20px;
+		margin-bottom: 50px;
+	}
+
+	p {
+		@extend .paragraph;
+		padding-left: 20%;
+		padding-right: 20%;
+	}
+
+}
+
+
+/* FOOTER */
+
+#footer {
+	min-height: 200px;
+	background-color: $darkbluegray;
+	display: flex;
+	align-items: center;
+
+	.container {
+		margin-top: 25px;
+		margin-bottom: 25px;
+	}
+
+	h2 {
+		color: $lightbluegray;
+	}
+	p {
+		color: $lightbluegray;
+		line-height: 150%;
+	}
+
+	.footerinfo {
+		padding-top: 25px;
+		padding-bottom: 25px;
 	}
 }
 
