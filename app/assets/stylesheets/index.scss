@@ -53,7 +53,7 @@ $lightbluegray: #ECEFF1;
 .buttons {
 	background-color: $lightbluegray;
 	text-transform: uppercase;
-	font-size: 14px;
+	font-size: 18px;
 	font-family: roboto-medium;
 	color: $darkbluegray;
 	margin-top: 25px;
@@ -198,10 +198,17 @@ $lightbluegray: #ECEFF1;
 	.form-control {
 		border: 1px solid $lightbluegray;
 		border-radius: 0%;
+		font-size: 16px;
+		font-family: roboto-regular;
+		border: 1px solid #b0bec5;
 	}
 
 	.form-control:focus {
 		box-shadow: 0px 0px 5px .1px $blue;
+	}
+
+	.ht {
+		height: 45px;
 	}
 
 	.btn {
