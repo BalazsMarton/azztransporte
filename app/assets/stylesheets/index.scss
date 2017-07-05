@@ -60,9 +60,20 @@ $lightbluegray: #ECEFF1;
 	border-radius: 0px;
 }
 
+.jumptarget:before{
+	content:'';
+	height:50px;
+	margin-top:-50;
+
+}
+
 
 
 /* NAV */
+
+.navbar-wrap {
+	height: 50px;
+}
 
 .navbar {
 	background-color: $lightgray;
@@ -94,23 +105,30 @@ $lightbluegray: #ECEFF1;
 
 #hero {
 
-	margin-top: 75px;
-	.container {
+	.container-fluid {
 		background: url(/img/740.jpg);
 		background-size: cover;
 		background-position: center;
 		height: 750px;
-		display: flex;
-		align-items: center;
+		.row{
+			height:100%;
+		}
 	}
 	.hero-content {
 		color: #fff;
-		h1 {
+		height:100%;
+		display: flex;
+
+align-items: center; /* align vertical */
+
+		.welcome-text{
+			h1 {
 			font-size: 48px;
 			font-family: roboto-medium;
-		}
-		p {
+			}
+			p {
 			font-family: roboto-regular;
+			}
 		}
 	}
 }
@@ -165,20 +183,39 @@ $lightbluegray: #ECEFF1;
 	.item {
 		margin-bottom: 50px;
 	}
-	.more {
-		@extend .buttons;
-	}
 
-	.more:hover {
-		background-color: $blue;
-		color: #ffffff;
-		box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.2);
-	}
-	.btn:focus {
-		outline: none;
-	}
 
 }
+
+/* FOTOS */
+
+#fotos {
+	margin-top: 50px;
+	background-color: $lightbluegray;
+	height: 500px;
+	.title-row {
+		margin-bottom: 50px;
+		margin-top: 50px;
+	}
+	h1 {
+		@extend .title;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* KONTAKT */
 
