@@ -116,9 +116,8 @@ section {
 
 	.container-fluid {
 		background: url(/img/740.jpg);
-		background-size: cover;
-		background-position: center;
-		height: 750px;
+		background-position: 50%;
+		height: calc(100vh - 50px);
 		.row{
 			height:100%;
 		}

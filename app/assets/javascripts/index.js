@@ -16,11 +16,18 @@ document.addEventListener("turbolinks:load", function() {
     responsive: true
 	});
 
+	$(function() {
+	    $('.nav a').on('click', function(){ 
+	        if($('.navbar-toggle').css('display') !='none'){
+	            $(".navbar-toggle").trigger( "click" );
+	        }
+	    });
+	});
 });
 
 document.addEventListener("turbolinks:before-cache", function() {
 
 	$.stellar('destroy')
-	
+
 });
 
