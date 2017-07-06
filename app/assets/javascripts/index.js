@@ -11,9 +11,16 @@ document.addEventListener("turbolinks:load", function() {
 	    });
 	});
 
+	$.stellar({
+    horizontalScrolling: false,
+    responsive: true
+	});
+
 });
 
 document.addEventListener("turbolinks:before-cache", function() {
 
+	$.stellar('destroy')
+	
 });
 

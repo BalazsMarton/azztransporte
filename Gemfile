@@ -36,6 +36,8 @@ gem 'font-awesome-sass'
 gem 'jquery-easing-rails'
 #aniamte.css animation library https://github.com/camelmasa/animate-rails
 gem "animate-rails"
+#stellar.js for parallax hero https://github.com/elektronaut/stellar-js-rails
+gem 'stellar-js-rails'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
