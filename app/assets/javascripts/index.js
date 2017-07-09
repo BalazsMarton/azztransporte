@@ -12,8 +12,8 @@ document.addEventListener("turbolinks:load", function() {
 	});
 
 	$.stellar({
-    horizontalScrolling: false,
-    responsive: true
+	    horizontalScrolling: false,
+	    responsive: true,
 	});
 
 	$(function() {
