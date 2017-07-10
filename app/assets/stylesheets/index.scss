@@ -60,6 +60,13 @@ $lightbluegray: #ECEFF1;
 	border-radius: 0px;
 }
 
+.bottomshadow {
+	box-shadow: 0 2px 2px 0 rgba(0,0,0,0.2);
+}
+
+.iconshadow {
+	box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.2);
+}
 .jumptarget::before {
   content:"";
   display:block;
@@ -86,28 +93,55 @@ section {
 
 .navbar {
 	background-color: $lightgray;
-	box-shadow: 0 2px 2px 0 rgba(0,0,0,0.2);
-	border: none;
+	@extend .bottomshadow;
+	border: none !important;
 		.nav li a {
 			font-size: 16px;
 			font-family: roboto-regular;
 			margin-left: 10px;
 			margin-right: 10px;
 			color: $darkbluegray;
+			position: relative;
 		}
 
 		.nav li a:hover {
-			color: $blue;
+			color: #fff;
+			background-color: #78909c;
+			@extend .iconshadow;
 		}
+
+
 
 		.navbar-collapse {
 			text-align: center;
+			border: none !important;
+			background-color: rgba(207, 216, 220, 0.3) !important;
 		}
 		.navbar-brand {
 			font-size: 28px;
 			font-family: roboto-bold;
 			color: $darkbluegray;
 		}
+
+		.navbar-toggle {
+			border: 1px solid $darkbluegray; 
+			background-color: invisible;
+			@extend .iconshadow;
+		}
+
+		.navbar-toggle:focus,
+		.navbar-toggle:hover {
+			background-color: invisible;
+			border: 1px solid #darkbluegray; 
+
+		}
+
+		.navbar-toggle .icon-bar {
+			background-color: $darkbluegray;
+			width: 15px;
+		}
+
+
 }
 
 /* HERO */
