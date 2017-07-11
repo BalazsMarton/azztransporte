@@ -31,7 +31,7 @@ $lightbluegray: #ECEFF1;
 /* EXTENDS */
 
 .title {
-	font-family: roboto-medium;
+	font-family: roboto-regular;
 	color: $darkbluegray;
 	margin-bottom: 25px;
 	text-transform: uppercase;
@@ -45,7 +45,7 @@ $lightbluegray: #ECEFF1;
 }
 
 .title2 {
-	font-family: roboto-medium;
+	font-family: roboto-regular;
 	color: $darkbluegray;
 	margin-bottom: 25px;
 }
@@ -171,17 +171,22 @@ section {
 			width:100%;
 			margin:auto;
 			.openinglogo{
-				max-width:400px;
-				max-height:400px;
+				max-width:500px;
+				max-height:500px;
 				margin:auto;
 				margin-bottom:3em;
 			}
 			h1 {
 			font-size: 48px;
-			font-family: roboto-medium;
+			font-family: roboto-regular;
+			color: $lightgray;
+			margin-bottom:20px;
 			}
 			p {
 			font-family: roboto-regular;
+			color: $lightgray;
+			padding-left: 5%;
+			padding-right: 5%;
 			}
 		}
 	}
