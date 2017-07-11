@@ -15,6 +15,7 @@ font-stretch: $font-stretch;
 @include declare-font-face('roboto-regular', 'roboto-regular', 400);
 @include declare-font-face('roboto-medium', 'roboto-medium', 500);
 @include declare-font-face('roboto-bold', 'roboto-bold', 700);
+@include declare-font-face('robotoslab-regular', 'robotoslab-regular', 400);
 
 
 
@@ -31,7 +32,7 @@ $lightbluegray: #ECEFF1;
 /* EXTENDS */
 
 .title {
-	font-family: roboto-regular;
+	font-family: robotoslab-regular;
 	color: $darkbluegray;
 	margin-bottom: 25px;
 	text-transform: uppercase;
@@ -178,9 +179,10 @@ section {
 			}
 			h1 {
 			font-size: 48px;
-			font-family: roboto-regular;
+			font-family: robotoslab-regular;
 			color: $lightgray;
 			margin-bottom:20px;
+			text-transform: uppercase;
 			}
 			p {
 			font-family: roboto-regular;
