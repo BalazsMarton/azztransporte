@@ -329,13 +329,7 @@ section {
 #footer {
 	min-height: 200px;
 	background-color: $darkbluegray;
-	display: flex;
 	align-items: center;
-
-	.container {
-		margin-top: 25px;
-		margin-bottom: 25px;
-	}
 
 	h2 {
 		color: $lightbluegray;
@@ -348,6 +342,17 @@ section {
 	.footerinfo {
 		padding-top: 25px;
 		padding-bottom: 25px;
+	}
+
+	.copyright{
+		padding:1em 0;
+		background-color:#253138;
+		a{
+			color:#ECEFF1;
+			&:hover{
+				text-decoration: none;
+			}
+		}
 	}
 }
 
@@ -458,6 +463,9 @@ section {
 			padding-left: 5%;
 			padding-right: 5%;
 		}
+	}
+	.copyright{
+		text-align: center;
 	}
 }
 
