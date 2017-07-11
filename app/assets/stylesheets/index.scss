@@ -92,6 +92,12 @@ section {
 	height: 50px;
 }
 
+.navbar-nav li a {
+	padding-top: 0;
+	padding-bottom: 0;
+    line-height: 50px;
+}
+
 .navbar {
 	background-color: $lightgray;
 	@extend .bottomshadow;
@@ -99,8 +105,6 @@ section {
 		.nav li a {
 			font-size: 16px;
 			font-family: roboto-regular;
-			margin-left: 10px;
-			margin-right: 10px;
 			color: $darkbluegray;
 			position: relative;
 		}
@@ -388,6 +392,14 @@ section {
 }
 
 @media screen and (max-width: 378px){
+	.hero-wrap .hero-content .welcome-text {
+		h1,p{
+		display:none;
+		}
+	}
+}
+
+@media screen and (max-width: 378px){
 	.hero-wrap .hero-content .welcome-text h1{
 		font-size: 36px;
 	}
@@ -440,14 +452,6 @@ section {
 		}
 	}
 
-	.nav {
-		li {
-			a {
-				padding-bottom: 20px;
-				padding-top: 20px;
-			}
-		}
-	}
 
 	#kontakt {
 		p {
@@ -457,6 +461,13 @@ section {
 	}
 }
 
+
+@media (min-width: 768px){
+	.navbar-nav li a {
+	    padding-top: 0px;
+	    padding-bottom: 0px;
+	}
+}
 
 
 
