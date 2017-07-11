@@ -372,11 +372,24 @@ section {
 
 
 /* Media queries */
-@media screen and (max-width: 360px){
-	.welcome-text{
-		h1{
-			font-size: 36px !important;
+@media screen and (orientation:landscape) and (max-height:800px){
+	.welcome-text{ 
+		h1,p{
+		display:none;
 		}
+	}
+	.openinglogo{
+
+		img{
+		max-height:50vh;
+		width:auto;
+		}
+	}
+}
+
+@media screen and (max-width: 378px){
+	.hero-wrap .hero-content .welcome-text h1{
+		font-size: 36px;
 	}
 }
 
