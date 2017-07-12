@@ -39,6 +39,9 @@ gem "animate-rails"
 #stellar.js for parallax hero https://github.com/elektronaut/stellar-js-rails
 gem 'stellar-js-rails'
 
+#secret keyz
+gem 'figaro'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

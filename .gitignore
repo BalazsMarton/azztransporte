@@ -18,3 +18,5 @@
 
 # Ignore ruby mine ideas
 .idea/
+# Ignore application configuration
+/config/application.yml
