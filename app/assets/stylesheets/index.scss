@@ -166,6 +166,7 @@ section {
 		background-position: 50% 50px;
 		background-repeat: no-repeat;
 		height: calc(100vh - 50px);
+		overflow-x: hidden;
 		.row{
 			height:100%;
 		}
@@ -180,12 +181,14 @@ section {
 			width:100%;
 			margin:auto;
 			.openinglogo{
+				animation-duration: 2s;
 				max-width:500px;
 				max-height:500px;
 				margin:auto;
 				margin-bottom:3em;
 			}
 			h1 {
+			animation-duration: 2s;
 			font-size: 48px;
 			font-family: robotoslab-regular;
 			color: $lightgray;
@@ -193,6 +196,7 @@ section {
 			text-transform: uppercase;
 			}
 			p {
+			animation-duration: 2s;
 			font-family: roboto-regular;
 			color: $lightgray;
 			padding-left: 5%;
