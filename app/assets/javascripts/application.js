@@ -16,4 +16,5 @@
 //= require jquery.easing
 //= require turbolinks
 //= require bootstrap-sprockets
+//= require light-gallery
 //= require_tree .

@@ -39,6 +39,8 @@ gem "animate-rails"
 #stellar.js for parallax hero https://github.com/elektronaut/stellar-js-rails
 gem 'stellar-js-rails'
 
+gem 'light_gallery_rails', git: 'https://github.com/stNicolaas/light-gallery-rails.git'   
+
 #secret keyz
 gem 'figaro'
 

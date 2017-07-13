@@ -1,3 +1,9 @@
+GIT
+  remote: https://github.com/stNicolaas/light-gallery-rails.git
+  revision: 97d892d0b4637ddae264514e2a44372853ff6f83
+  specs:
+    light_gallery_rails (1.1.4)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -184,6 +190,7 @@ DEPENDENCIES
   jbuilder (~> 2.0)
   jquery-easing-rails
   jquery-rails
+  light_gallery_rails!
   puma
   puma-heroku
   rails (= 4.2.6)

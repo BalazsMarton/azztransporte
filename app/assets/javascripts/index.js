@@ -23,6 +23,9 @@ document.addEventListener("turbolinks:load", function() {
 	        }
 	    });
 	});
+
+	$("#lightGallery").lightGallery(); 
+
 });
 
 document.addEventListener("turbolinks:before-cache", function() {
