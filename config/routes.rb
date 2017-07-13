@@ -1,6 +1,10 @@
 Rails.application.routes.draw do
 
   root 'pages#index'
+
+  post 'contact', to: 'message#create'
+  get 'contact_error', to: 'message#contact_error', as: 'contact_error'
+  get 'contact_sent', to: 'message#contact_sent', as: 'contact_sent'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

@@ -1,0 +1,16 @@
+<% if flash[:notice] %>
+$('#new_message').before('<div class="notice row"><%= flash[:notice] %></div>');
+$('#errors').remove();
+$('#new_message').remove();
+$('.notice').click(function(){
+    $(this).remove();
+});
+<% end %>
+
+<% if @message.errors.any? %>
+$('#errors').remove();
+$('#new_message').before('<div class="errors row" id="errors"><% @message.errors.each do |attr,msg| %><%= msg %><br><% end %></div>');
+$('.errors').click(function(){
+    $(this).remove();
+});
+<% end %>
