@@ -23,7 +23,7 @@ class MessageController < ApplicationController
       format.js do
         if @message.valid?
           MessageMailer.new_message(@message).deliver_now
-          flash.now[:notice] = "Üzenetét elküldtük!"
+          flash.now[:notice] = "Ihre Nachricht wurde erfolgreich übermittelt!"
         else
           flash.now[:error]
         end
