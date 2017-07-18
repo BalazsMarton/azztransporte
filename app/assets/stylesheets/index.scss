@@ -285,6 +285,12 @@ section {
 	list-style:none;
 	li{
 		padding:1em;
+		a{
+			display:block;
+			.img-responsive{
+			width:100%;
+			}
+		}
 	}
 }
 
