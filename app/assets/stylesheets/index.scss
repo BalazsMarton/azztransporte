@@ -441,9 +441,10 @@ section {
 }
 
 @media screen and (max-width: 767px) {
-	#hero {
-		.container {
-			height: 350px;
+	.hero-wrap .hero-content .welcome-text {
+	
+		h1 {
+			font-size: 36px;
 		}
 	}
 
