@@ -1,6 +1,6 @@
 class MessageMailer < ApplicationMailer
 	default from: "<info@azzumzug.ch>"
-	default to: "Azzumzug <azzumzug@gmail.com>"
+	default to: "Azzumzug gmail <azzumzug@gmail.com>, Azzumzug info <info@azzumzug.ch>"
 
 	def new_message(message)
 		@message = message
