@@ -232,8 +232,8 @@ section {
 	}
 	p {
 		@extend .paragraph;
-		padding-left: 10%;
-		padding-right: 10%;
+		padding-left: 5%;
+		padding-right: 5%;
 	}
 	h2 {
 		@extend .title2;
@@ -256,6 +256,9 @@ section {
 
 	.item {
 		margin-bottom: 50px;
+		padding: 30px 5px 30px 5px;
+		@extend .iconshadow;
+		background-color: $lightbluegray;
 	}
 
 
@@ -472,12 +475,18 @@ section {
 			height: 75px;
 			margin-bottom: 15px;
 		}
+		.item {
+			padding: 20px 0px 20px 0px;
+		}
 	}
 
 	#uberuns {
 		p {
 			font-size: 14px;
 		}
+
+		
+		
 	}
 
 
