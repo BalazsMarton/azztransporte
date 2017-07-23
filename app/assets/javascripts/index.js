@@ -1,6 +1,6 @@
 document.addEventListener("turbolinks:load", function() {
 
-//jQuery for page scrolling feature - requires jQuery Easing plugin
+	//jQuery for page scrolling feature - requires jQuery Easing plugin
 	$(function() {
 	    $('a.page-scroll').bind('click', function(event) {
 	        var $anchor = $(this);
@@ -10,6 +10,11 @@ document.addEventListener("turbolinks:load", function() {
 	        event.preventDefault();
 	    });
 	});
+
+	if(window.matchMedia('(max-width: 767px)').matches) {
+            var bg = jQuery("#hero-bg");
+            bg.height(jQuery(window).height()-50);
+    };
 
 	$.stellar({
 	    horizontalScrolling: false,
