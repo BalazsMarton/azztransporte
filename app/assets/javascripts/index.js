@@ -18,7 +18,7 @@ document.addEventListener("turbolinks:load", function() {
 
 	$.stellar({
 	    horizontalScrolling: false,
-	    responsive: true,
+	    responsive: false,
 	});
 
 	$(function() {
